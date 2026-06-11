@@ -13,12 +13,13 @@
     max-width: 1297px;
     margin: 0 auto;
 }
+.container1{
+    max-width: 1400px;
+    margin: 0 auto;
+}
 header{
-    background-image: url(assets/Slice.jpg);
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: center center; 
-    background-attachment: fixed; 
+background: #000000;
+background: linear-gradient(90deg, rgba(0, 0, 0, 1) 23%, rgba(24, 24, 35, 1) 23%);
     
 }
 .header-logo{
@@ -42,10 +43,94 @@ header{
 .menu-icon{
     display: none;
 }
+h1{
+    font-size: 78px;
+    font-weight: 600;
+    color: white;
+    text-align: left;
+    margin-bottom: 32px;
+}
+h1 span{
+    font-size: 78px;
+    font-weight: 600;
+    opacity: 50%;
+}
+.itog1{   
+    padding: 80px 40px 84px 0;
+    display: flex;
+    align-items: center; /* Выравнивание элементов по вертикали по центру */
+    justify-content: space-between;
+
+    }
+.Robin{
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 23%, rgba(24, 24, 35, 1) 23%);
+    border-bottom: 5px dashed rgb(255, 255, 255, 0.7);
+}
+
+.Robin-img{
+    flex: 1; /* Занимает равную долю пространства */
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.Robin1{
+    flex: 1; /* Занимает равную долю пространства */
+    max-width: 738px; 
+    margin-left: -80px; 
+  /* Гарантирует, что текст будет выше картинки */
+    position: relative; 
+    z-index: 2; 
+}
+.Robin1 p{
+    font-size: 18px;
+    font-weight: 150px;
+    color: white;
+}
+
 @media(min-width: 768px) and (max-width:1440px){
     .container{
         max-width: 688px;
+        margin: 0 auto;
     }
+    header{
+        background-image: none;
+        background-color: black;
+    }
+
+    .Robin{
+        background: black;
+        border-bottom:none ;
+    }
+    .container1{
+        max-width: 742px ;
+    }
+    .itog1{   
+    padding: 80px 0 84px 0;
+    }
+    .Robin1{
+    max-width: 436px;
+    margin-left: -5px; 
+    }
+    .Robin-img{
+        max-width: 384px;
+        height: 650px;
+        justify-content: center;
+    }
+    h1{
+    font-size: 56px;
+    font-weight: 600;
+    color: white;
+    text-align: left;
+    margin-bottom: 32px;
+    }
+    h1 span{
+    font-size: 56px;
+    font-weight: 600;
+    opacity: 50%;}
+
 }
 @media(min-width:360px) and (max-width: 767px){
     .menu-icon{
@@ -60,5 +145,29 @@ header{
     }
     .container{
         max-width: 320px;
+    }
+        header{
+        background-image: none;
+        background-color: black;
+    }
+    .Robin{
+        background-color: black;
+        background-image: url(assets/Frame\ 23.png);
+    }
+    .Robin1{
+    max-width: 320px;
+    padding: 336px 20px 199px 0;
+    }
+    h1{
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    text-align: left;
+    margin-bottom: 32px;
+    }
+    h1 span{
+    font-size: 32px;
+    font-weight: 600;
+    opacity: 50%;
     }
 }
