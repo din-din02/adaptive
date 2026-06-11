@@ -17,6 +17,10 @@
     max-width: 1400px;
     margin: 0 auto;
 }
+.container2{
+    max-width: 1296px;
+    margin: 0 auto;
+}
 header{
 background: #000000;
 background: linear-gradient(90deg, rgba(0, 0, 0, 1) 23%, rgba(24, 24, 35, 1) 23%);
@@ -58,18 +62,16 @@ h1 span{
 .itog1{   
     padding: 80px 40px 84px 0;
     display: flex;
-    align-items: center; /* Выравнивание элементов по вертикали по центру */
+    align-items: center; 
     justify-content: space-between;
 
     }
 .Robin{
     background: #000000;
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 23%, rgba(24, 24, 35, 1) 23%);
-    border-bottom: 5px dashed rgb(255, 255, 255, 0.7);
 }
-
 .Robin-img{
-    flex: 1; /* Занимает равную долю пространства */
+    flex: 1; 
     display: flex;
     justify-content: flex-end;
     max-width: 100%;
@@ -77,10 +79,9 @@ h1 span{
     object-fit: cover;
 }
 .Robin1{
-    flex: 1; /* Занимает равную долю пространства */
+    flex: 1; 
     max-width: 738px; 
     margin-left: -80px; 
-  /* Гарантирует, что текст будет выше картинки */
     position: relative; 
     z-index: 2; 
 }
@@ -88,6 +89,77 @@ h1 span{
     font-size: 18px;
     font-weight: 150px;
     color: white;
+}
+/*Company*/
+.Company{
+    background: black;
+    padding: 120px 0 120px;
+}
+.Company-text p{
+    color: lightgrey;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+h2{
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+}
+.Company-text h2{
+    max-width: 689px;
+}
+.Company-flex{
+    display: flex;
+    margin-top: 40px;
+}
+h3{
+    color: #8491A0;
+    font-size: 117px;
+    font-weight:lighter;
+}
+.Company1 span{
+    color: green;
+    font-size: 24px;
+}
+h4{
+    font-size: 24px;
+    color: white;
+}
+.Company1 p{
+    margin-top: 22px;
+    color: lightgrey;
+    max-width: 368px;
+}
+.Company1{
+    max-width: 416px;
+    margin-right: 24px;
+}
+.Company2{
+    max-width: 416px;
+    margin-right: 24px;
+}
+.Company2 span{
+    color: blue;
+    font-size: 24px;
+}
+.Company2 p{
+    margin-top: 22px;
+    color: lightgrey;
+    max-width: 368px;
+}
+.Company3{
+    max-width: 416px;
+}
+.Company3 span{
+color: pink;
+font-size: 24px;
+}
+.Company3 p{
+    margin-top: 22px;
+    color: lightgrey;
+    max-width: 368px;
 }
 
 @media(min-width: 768px) and (max-width:1440px){
@@ -102,7 +174,7 @@ h1 span{
 
     .Robin{
         background: black;
-        border-bottom:none ;
+
     }
     .container1{
         max-width: 742px ;
@@ -115,9 +187,9 @@ h1 span{
     margin-left: -5px; 
     }
     .Robin-img{
-        max-width: 384px;
-        height: 650px;
-        justify-content: center;
+    max-width: 384px;
+    height: 650px;
+    justify-content: center;
     }
     h1{
     font-size: 56px;
@@ -146,24 +218,36 @@ h1 span{
     .container{
         max-width: 320px;
     }
-        header{
+    .container1{
+        max-width: 360px;
+    }
+    .itog1{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    header{
         background-image: none;
         background-color: black;
     }
     .Robin{
-        background-color: black;
-        background-image: url(assets/Frame\ 23.png);
+        background: black;
+    }
+    .Robin-img img{
+        justify-content:center;
+        width: 100vw;
+
     }
     .Robin1{
     max-width: 320px;
-    padding: 336px 20px 199px 0;
+    padding: 48px 20px 48px 20px;
+    margin-left: 0px;
     }
     h1{
     font-size: 32px;
     font-weight: 600;
     color: white;
     text-align: left;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     }
     h1 span{
     font-size: 32px;
