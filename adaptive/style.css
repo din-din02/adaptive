@@ -21,6 +21,15 @@
     max-width: 1296px;
     margin: 0 auto;
 }
+.container3{
+    max-width: 1368px;
+    margin: 0 auto;
+    margin-right: 0px;
+}
+.container4{
+    max-width: 1076px;
+    margin: 0 auto;
+}
 header{
 background: #000000;
 background: linear-gradient(90deg, rgba(0, 0, 0, 1) 23%, rgba(24, 24, 35, 1) 23%);
@@ -161,6 +170,184 @@ font-size: 24px;
     color: lightgrey;
     max-width: 368px;
 }
+/*Philosophy*/
+.Philosophy{
+    background: #FFF3E4;
+}
+.Philosophy-flex{
+    display: flex;
+}
+.Philosophy-text{
+    padding: 120px 72px 120px 0;
+}
+.Philosophy-text h2{
+    color: black;
+    margin-bottom: 24px;
+}
+.Philosophy-text p{
+    color: gray;
+    font-size: 18px;
+    margin-bottom: 134px;
+}
+.Philosophy-text a{
+    color: #000000;
+}
+/*Skill*/
+.Skill{
+    background: #000000;
+}
+.Skill-flex{
+    display: flex;
+    padding: 120px 0 120px 0;
+}
+.Skill p{
+    color: grey;
+}
+.Skill-text1 h2{ 
+    margin-bottom: 24px;
+}
+.Skill-text2 img{
+    margin-bottom: 24px;
+}
+.Skill-text2 h4{
+    margin-bottom: 12px;
+}
+.Skill-text2 p{
+    margin-bottom: 24px;
+}
+.Skill-text1{
+    max-width: 416px;
+    margin-right: 24px;
+}
+.Skill-text2{
+    max-width: 416px;
+    margin-right: 24px;
+}
+.Skill-img{
+    display: flex;         /* Выстраивает блоки в одну строку */
+    align-items: center;   /* Центрирует логотипы по вертикали */
+    justify-content: space-between; /* Равномерно распределяет блоки */
+    width: 100%; 
+}
+.Skill-img div{
+    flex: 1;               /* Делает все ячейки абсолютно одинаковой ширины */
+    display: flex;         /* Включаем flex внутри ячейки для центрирования */
+    justify-content: center; /* Центрирует логотип по горизонтали внутри ячейки */
+    align-items: center;     /* Отступы сверху и снизу, чтобы линия была нужной высоты */
+    box-sizing: border-box;
+    border: 1px solid grey; 
+    padding: 55px 127px;
+}
+.Skill-img .dop{
+    display: none;
+}
+/*project*/
+.project{
+    padding: 120px 0 153px 0;
+    background: #000000;
+}
+.project-flex {
+    display: flex;
+    justify-content: space-between; /* Раздвигаем колонки по краям */
+    max-width: 1200px;              /* Ширина контента по сетке сайта */
+    margin: 0 auto;                 /* Центрируем всю сетку на экране */
+    gap: 24px;                      /* Расстояние между левой и правой колонкой */
+}
+.project-flex div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;         /* Карточки внутри колонки идут сверху вниз */
+    gap: 24px;                      /* Расстояние между карточками по вертикали */
+}
+.pro {
+    background-color: #181823;      /* Темно-серый фон карточки из макета */
+    display: flex;
+    flex-direction: column;         /* Текст идет строго под картинкой */
+}
+.project1 p{
+    color: grey;
+    margin-bottom: 8px;
+}
+.project1 h2{
+    margin-bottom: 80px;
+}
+.project-text h4{
+    margin: 0 289px 0 32px;
+}
+.project-text p{
+    color: grey;
+    margin: 0 32px 42px 32px;
+}
+.button {
+    display: flex; /* Центрирует кнопку ровно посередине */
+    margin-top: 60px;                  /* Отступ сверху от блоков с проектами */
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Сама ссылка-кнопка */
+.button a {
+    display: inline-block;     
+    text-decoration: none;     
+    background: transparent;   
+    border: 1px solid #333339; /* Тонкая серая обводка вокруг текста */
+    color: #ffffff;            
+    padding: 24px 32px;        /* Внутренние отступы (высота и ширина кнопки) */
+    text-transform: uppercase; 
+    white-space: nowrap;       /* Запрет переноса текста */
+    width: max-content;
+}
+
+/*Inst*/
+.Inst{
+    background: violet;
+}
+.Inst-flex{
+    display: flex;
+}
+.Inst-text{
+    padding: 120px 72px 120px 0;
+}
+.Inst-text h2{
+    color: black;
+    margin-bottom: 24px;
+}
+.Inst-text p{
+    color: gray;
+    font-size: 18px;
+    margin-bottom: 134px;
+}
+.Inst-text a{
+    color: #000000;
+}
+/*Dribble*/
+.Dribbble{
+    background: #000000;    
+    display: flex;
+    flex-direction: column; /* Центрирует по горизонтали */
+    align-items: center;
+}
+.Dribbble-text{
+    padding: 120px 0;
+    text-align: left;
+}
+.Dribbble-text p{
+    color: grey;
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+.Dribbble-text a{
+    color:white;
+    margin-bottom: 124px;
+}
+.Dribbble-img{
+    display: flex;
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center; 
+    margin-bottom: 120px;
+}
 
 @media(min-width: 768px) and (max-width:1440px){
     .container{
@@ -202,6 +389,65 @@ font-size: 24px;
     font-size: 56px;
     font-weight: 600;
     opacity: 50%;}
+    .container2{
+    max-width: 688px;
+    }
+    .container3{
+        max-width: 720px;
+    }
+    .Philosophy-text{
+        padding: 80px 40px 80px 0;
+    }
+    .Philosophy-text p{
+        margin-bottom: 67px;
+    }
+    .Philosophy-img{
+        content: url(assets/Rectangle\ 391.png);
+    }
+    .Skill-img .dop{
+        display: flex;
+    }
+    .Skill-img {
+        display: grid;
+        /* Создаем ровно 2 колонки одинаковой ширины */
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .Skill-img div {
+        /* Уменьшаем отступы сверху/снизу до 40px, чтобы на телефонах блоки не были огромными */
+        padding: 40px 20px; 
+    }
+
+    /* Сбрасываем старый сдвиг рамок Flexbox, который мы писали ранее */
+    .Skill-img div:not(:first-child) {
+        margin-left: 0;
+    }
+    .project-flex .button{
+        display: none;
+    }
+    .project-flex{
+        flex-direction: column;
+        gap: 48px;
+    }
+    .Inst-text{
+        padding: 80px 40px 80px 0;
+    }
+    .Inst-text p{
+        margin-bottom: 133px;
+    }
+    .Inst-img{
+        content: url(assets/fly1.png);
+    }
+    .container4{
+        max-width: 688px;
+    }
+    .Dribbble-img{
+        content: url(assets/dr.png);
+    }
+    .Dribbble-text a{
+        margin-bottom: 120px;
+    }
+
 
 }
 @media(min-width:360px) and (max-width: 767px){
@@ -253,5 +499,90 @@ font-size: 24px;
     font-size: 32px;
     font-weight: 600;
     opacity: 50%;
+    }
+    .container2{
+    max-width: 320px;
+    margin: 0 auto;
+    }
+    .Company-flex{
+        flex-wrap: wrap;
+        max-width: 320px;
+    }
+    .container3{
+        max-width: 320px;
+        margin-left: 0;
+    }
+    .Philosophy-flex{
+        flex-wrap: wrap;
+    }
+    .Philosophy-img{
+        content: url(assets/Rectangle\ 392.png);
+    }
+    .Philosophy-text{
+        padding: 48px 20px 48px 20px;
+    }
+    .Philosophy-text p{
+        margin-bottom: 90px;
+    }
+    .Skill-flex{
+        flex-direction: column;
+        gap: 48px;
+    }
+    .Skill-text2 {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .Skill-img .dop{
+        display: flex;
+    }
+    .Skill-img {
+        display: grid;
+        /* Создаем ровно 2 колонки одинаковой 
+        ширины */
+        grid-template-columns: repeat(2, 1fr); 
+        border-top: 1px solid #222222;
+        border-left: 1px solid #222222;
+    }
+
+    .Skill-img div {
+        /* Уменьшаем отступы сверху/снизу до 40px, чтобы на телефонах блоки не были огромными */
+        padding: 40px 20px; 
+        border: none; /* Сбрасываем старый border */
+        border-bottom: 1px solid #222222;
+        border-right: 1px solid #222222;
+    }
+
+    /* Сбрасываем старый сдвиг рамок Flexbox, который мы писали ранее */
+    .Skill-img div:not(:first-child) {
+        margin-left: 0;
+    }
+    .project-flex .button{
+        display: none;
+    }
+    .project-flex{
+        flex-direction: column;
+        gap: 48px;
+    }
+    .Inst-flex{
+        flex-wrap: wrap;
+    }
+    .Inst-img{
+        content: url(assets/Rectangle\ 392.png);
+    }
+    .Inst-text{
+        padding: 48px 20px 48px 20px;
+    }
+    .Inst-text p{
+        margin-bottom: 125px;
+    }
+    .Dribbble-img{
+        content: url(assets/dr1.png);
+    }
+    .container4{
+        max-width: 320px;
+    }
+    .Dribbble-text a{
+        margin-bottom: 64px;
     }
 }
