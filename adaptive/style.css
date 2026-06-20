@@ -3,6 +3,7 @@
     padding: 0;
     font-family: "Sen", sans-serif;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 .flex{
     display: flex;
@@ -52,6 +53,16 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 1) 23%, rgba(24, 24, 35, 1) 23%
     color: white;
     border: none;     
     outline: none; 
+    padding: 32px 24px;
+    text-decoration: none;
+}
+.inf-button:hover{
+    font-size:larger;
+    background-color: blueviolet;
+}
+.but:hover{
+    font-size:larger;
+    background-color: blueviolet;
 }
 .menu-icon{
     display: none;
@@ -209,7 +220,9 @@ font-size: 24px;
 .Skill-text2 img{
     margin-bottom: 24px;
 }
-.Skill-text2 h4{
+.Skill-text2 h3{
+    font-size: 24px;
+    color: white;
     margin-bottom: 12px;
 }
 .Skill-text2 p{
@@ -224,16 +237,16 @@ font-size: 24px;
     margin-right: 24px;
 }
 .Skill-img{
-    display: flex;         /* Выстраивает блоки в одну строку */
-    align-items: center;   /* Центрирует логотипы по вертикали */
-    justify-content: space-between; /* Равномерно распределяет блоки */
+    display: flex;         
+    align-items: center;   
+    justify-content: space-between; 
     width: 100%; 
 }
 .Skill-img div{
-    flex: 1;               /* Делает все ячейки абсолютно одинаковой ширины */
-    display: flex;         /* Включаем flex внутри ячейки для центрирования */
-    justify-content: center; /* Центрирует логотип по горизонтали внутри ячейки */
-    align-items: center;     /* Отступы сверху и снизу, чтобы линия была нужной высоты */
+    flex: 1;               
+    display: flex;         
+    justify-content: center; 
+    align-items: center;   
     box-sizing: border-box;
     border: 1px solid grey; 
     padding: 55px 127px;
@@ -248,22 +261,21 @@ font-size: 24px;
 }
 .project-flex {
     display: flex;
-    justify-content: space-between; /* Раздвигаем колонки по краям */
-    max-width: 1200px;              /* Ширина контента по сетке сайта */
-    margin: 0 auto;                 /* Центрируем всю сетку на экране */
-    gap: 24px;                      /* Расстояние между левой и правой колонкой */
+    justify-content: space-between;
+    max-width: 1200px;              
+    margin: 0 auto;                 
+    gap: 24px;                      
 }
 .project-flex div {
     flex: 1;
     display: flex;
-    flex-direction: column;         /* Карточки внутри колонки идут сверху вниз */
-    gap: 24px;                      /* Расстояние между карточками по вертикали */
+    flex-direction: column;         
+    gap: 24px;                      
 }
 .pro {
-    background-color: #181823;      /* Темно-серый фон карточки из макета */
+    background-color: #181823;      
     display: flex;
-    flex-direction: column;         /* Текст идет строго под картинкой */
-}
+    flex-direction: column;}         
 .project1 p{
     color: grey;
     margin-bottom: 8px;
@@ -271,31 +283,33 @@ font-size: 24px;
 .project1 h2{
     margin-bottom: 80px;
 }
-.project-text h4{
+.project-text h3{
     margin: 0 289px 0 32px;
+    font-size: 24px;
+    color: white;
 }
 .project-text p{
     color: grey;
     margin: 0 32px 42px 32px;
 }
 .button {
-    display: flex; /* Центрирует кнопку ровно посередине */
-    margin-top: 60px;                  /* Отступ сверху от блоков с проектами */
+    display: flex; 
+    margin-top: 60px;                  
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Сама ссылка-кнопка */
+
 .button a {
     display: inline-block;     
     text-decoration: none;     
     background: transparent;   
-    border: 1px solid #333339; /* Тонкая серая обводка вокруг текста */
+    border: 1px solid #333339;
     color: #ffffff;            
-    padding: 24px 32px;        /* Внутренние отступы (высота и ширина кнопки) */
+    padding: 24px 32px;       
     text-transform: uppercase; 
-    white-space: nowrap;       /* Запрет переноса текста */
+    white-space: nowrap;       
     width: max-content;
 }
 
@@ -325,7 +339,7 @@ font-size: 24px;
 .Dribbble{
     background: #000000;    
     display: flex;
-    flex-direction: column; /* Центрирует по горизонтали */
+    flex-direction: column;
     align-items: center;
 }
 .Dribbble-text{
@@ -344,10 +358,227 @@ font-size: 24px;
 }
 .Dribbble-img{
     display: flex;
-    justify-content: center; /* Центрирует по горизонтали */
+    justify-content: center; 
     align-items: center; 
     margin-bottom: 120px;
 }
+.test{
+    background: #000000;
+}
+.test-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.test-text{
+    max-width: 588px;
+    margin-top: 120px;
+}
+.test-text p{
+    color: grey;
+    margin-top: 24px;
+    margin-bottom: 66px;
+    font-size: 18px;
+}
+.test-text a{
+    color: white;
+}
+.test-img {
+    display: flex;
+    flex-direction: column;
+    gap: 120px; 
+    max-width: 636px;
+    margin-top: 120px;
+    margin-bottom: 120px;} 
+.test-o{
+    border: grey solid 1px;
+}
+.test-o-text{
+    padding: 64px 64px 64px 64px;
+}
+.test-o-text h4{
+    margin-bottom: 64px;
+}
+.test-o-text p{
+    color: gray;
+    font-size: 18px;
+}
+.photo{
+    background: #000000;
+}
+.photography-text{
+    padding-top: 120px;
+    margin-bottom: 64px;
+}
+.photography-text p{
+    color: grey;
+    font-size: 18px;
+    margin-top: 24px;
+    max-width: 588px;
+}
+.photography-img{
+    padding-bottom: 120px;
+    padding-top: 40px;
+    display: flex;
+    gap: 24px;
+}
+.photography-as{
+    display: flex;
+    gap: 24px;
+}
+.photography1{
+    border: #5221E6 solid 1px;
+    color: white;
+    background-color: #5221E6;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+.photography2{
+    border: #5221E6 solid 1px;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+.photography3{
+    border: #5221E6 solid 1px;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+.photography4{
+    border: #5221E6 solid 1px;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+.started{
+    background: #000000;
+}
+.started-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.started-text{
+    padding-top: 120px;
+}
+.started-text p{
+    margin-top: 24px;
+    color: grey;
+    font-size: 18px;
+    max-width: 526px;
+}
+
+.started-a {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+    max-width: 526px; 
+    width: 100%;
+    padding-top: 120px;
+    margin-bottom: 120px;
+}
+
+
+.name-group, .email-group, .message-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+
+.started-a input,
+.started-a textarea {
+    width: 100%; 
+    box-sizing: border-box; 
+    background-color: #181824; 
+    border: none;
+    color: #fff;
+    padding: 12px;
+}
+
+
+.started-a textarea {
+    min-height: 100px; 
+    resize: vertical; 
+}
+
+
+.started-a label {
+    color: #fff;
+    font-family: sans-serif;
+    margin-bottom: 8px;
+}
+
+
+.started-a a {
+    display: block;
+    width: 100%; 
+    box-sizing: border-box;
+    background-color: #5833ee; 
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 24px 177px;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+footer {
+    background-color: #161623;
+    padding: 80px 0 40px 0;   
+    color: #ffffff;
+}
+
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;}     
+
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;}                 
+
+
+.ss {
+    display: flex;
+    gap: 16px;              
+}
+
+
+.ssp-flex {
+    display: flex;
+    gap: 100px;  
+    margin-right: 110px;              
+}
+
+.ssp {
+    display: flex;
+    flex-direction: column;    
+    gap: 30px;                 
+}
+
+.ssp a {
+    color: #ffffff;
+    text-decoration: none;       
+}
+.ssp a:hover {
+    opacity: 1; }               
+
+
+.footer-text {
+    padding-top: 80px;
+}
+
+.footer-text p {
+    color: grey;
+}
+
+
 
 @media(min-width: 768px) and (max-width:1440px){
     .container{
@@ -402,23 +633,19 @@ font-size: 24px;
         margin-bottom: 67px;
     }
     .Philosophy-img{
-        content: url(assets/Rectangle\ 391.png);
+        content: url(assets/Rectangle391.png);
     }
     .Skill-img .dop{
         display: flex;
     }
     .Skill-img {
         display: grid;
-        /* Создаем ровно 2 колонки одинаковой ширины */
         grid-template-columns: repeat(2, 1fr); 
     }
-
     .Skill-img div {
-        /* Уменьшаем отступы сверху/снизу до 40px, чтобы на телефонах блоки не были огромными */
         padding: 40px 20px; 
     }
 
-    /* Сбрасываем старый сдвиг рамок Flexbox, который мы писали ранее */
     .Skill-img div:not(:first-child) {
         margin-left: 0;
     }
@@ -447,6 +674,66 @@ font-size: 24px;
     .Dribbble-text a{
         margin-bottom: 120px;
     }
+    .test-text{
+        max-width: 333px;
+        margin-top: 80px;
+    }
+    .test-text p{
+        margin-bottom: 40px;
+    }
+    .test-img{
+        max-width: 332px;
+        margin-top: 80px;
+        gap: 64px;
+    }
+    .pick1{
+        content: url(assets/p1.png);
+    }
+    .pick2{
+        content: url(assets/p2.png);
+    }
+    .pick3{
+        content: url(assets/p3.png);
+    }
+    .test-o-text{
+    padding: 32px 32px;
+    }
+    .photography-text{
+    padding-top: 80px;
+    }
+    .photography-text p{
+        max-width: 689px;
+    }
+    .photography-img{
+        padding-bottom: 80px;
+        display: grid;
+        justify-items: stretch;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 24px
+    }
+    .started-text{
+    padding-top: 80px;
+    }
+    .started-text p{
+    max-width: 332px;
+    }
+
+    .started-a {
+        max-width: 332px; 
+        width: 100%;
+        padding-top: 120px;
+        margin-bottom: 120px;
+    }
+    .started-a a {
+        padding: 24px 79px;
+    }
+    .footer-text {
+    padding-bottom: 80px;
+    max-width: 329px;
+    }
+    .ssp-flex { 
+    margin-right: 0;         
+}
 
 
 }
@@ -516,7 +803,8 @@ font-size: 24px;
         flex-wrap: wrap;
     }
     .Philosophy-img{
-        content: url(assets/Rectangle\ 392.png);
+        content: url(assets/Rectangle392.png);
+        max-width: 362px;
     }
     .Philosophy-text{
         padding: 48px 20px 48px 20px;
@@ -538,22 +826,18 @@ font-size: 24px;
     }
     .Skill-img {
         display: grid;
-        /* Создаем ровно 2 колонки одинаковой 
-        ширины */
         grid-template-columns: repeat(2, 1fr); 
         border-top: 1px solid #222222;
         border-left: 1px solid #222222;
     }
 
     .Skill-img div {
-        /* Уменьшаем отступы сверху/снизу до 40px, чтобы на телефонах блоки не были огромными */
         padding: 40px 20px; 
-        border: none; /* Сбрасываем старый border */
+        border: none; 
         border-bottom: 1px solid #222222;
         border-right: 1px solid #222222;
     }
 
-    /* Сбрасываем старый сдвиг рамок Flexbox, который мы писали ранее */
     .Skill-img div:not(:first-child) {
         margin-left: 0;
     }
@@ -568,7 +852,7 @@ font-size: 24px;
         flex-wrap: wrap;
     }
     .Inst-img{
-        content: url(assets/Rectangle\ 392.png);
+        content: url(assets/Rectangle392.png);
     }
     .Inst-text{
         padding: 48px 20px 48px 20px;
@@ -584,5 +868,103 @@ font-size: 24px;
     }
     .Dribbble-text a{
         margin-bottom: 64px;
+    }
+    .test-text{
+        margin-top: 48px;
+        max-width: 320px;
+    }
+    .test-text p{
+        margin-top: 16px;
+        margin-bottom: 40px;
+    }
+    .test-flex{
+        flex-direction: column;
+        gap: 48px;
+    }
+    .pick1{
+        content: url(assets/pi1.png);
+    }
+    .pick2{
+        content: url(assets/pi2.png);
+    }
+    .pick3{
+        content: url(assets/pi3.png);
+    }
+    .test-img{
+        margin-top: 64px;
+        margin-bottom: 48px;
+        gap: 48px;
+    }
+    .test-o-text{
+    padding: 32px 32px;
+    }
+    .photography-text{
+    padding-top: 48px;
+    margin-bottom: 40px;
+    }
+    .photography-text p{
+    margin-top: 24px;
+    max-width: 320px;
+    }
+    .photography-img{
+    padding-bottom: 48px;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    }
+    .photography-as{
+        text-align: center;
+        display: grid;
+        justify-items: stretch;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 24px
+        
+    }   
+    .started-flex{
+        flex-wrap: wrap;
+    }
+    .started-text{
+    padding-top: 48px;
+    }
+    .started-text p{
+        margin-top: 16px;
+    max-width: 320px;
+    }
+
+    .started-a {
+        max-width: 320px; 
+        width: 100%;
+        padding-top: 48px;
+        margin-bottom: 48px;
+    }
+    .started-a a {
+        padding: 24px 79px;
+    }
+    
+    .footer-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        gap: 32px;               
+    }
+    .ssp-flex {
+        display: flex;
+        flex-direction: column;  
+        align-items: flex-start;
+        gap: 20px;               
+    }
+
+    .ssp {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;               
+    }
+
+    .footer-text {
+        margin-top: 48px;
+        text-align: left;        
     }
 }
