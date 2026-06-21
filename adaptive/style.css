@@ -211,6 +211,9 @@ font-size: 24px;
     display: flex;
     padding: 120px 0 120px 0;
 }
+.Skill-flex1{
+    display: flex;
+}
 .Skill p{
     color: grey;
 }
@@ -634,6 +637,17 @@ footer {
     }
     .Philosophy-img{
         content: url(assets/Rectangle391.png);
+    }
+    .Skill-text1{
+        margin-bottom: 48px;
+    }
+    .Skill-text2{
+        max-width: 332px;
+        margin-bottom: 80px;
+    }
+    .Skill-flex{
+        padding: 120px 0 0 0;
+        flex-direction: column;
     }
     .Skill-img .dop{
         display: flex;
